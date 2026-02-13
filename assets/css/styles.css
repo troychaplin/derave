@@ -75,13 +75,11 @@ a {
   color: var(--wp--preset--color--black);
   font-family: var(--font-body);
   overflow: hidden;
-background-image:
-radial-gradient(ellipse 60% 50% at 20% 30%, rgba(0,0,0,0.008) 0%, transparent 50%),
-                    radial-gradient(ellipse 40% 40% at 85% 75%, rgba(0,0,0,0.006) 0%, transparent 45%),
-                radial-gradient(circle, rgba(255,255,255,0.18) 0.3px, transparent 0.3px);
-              background-size: 100% 100%, 100% 100%, 40px 40px;
-              background-position: center, center, 0 0;
-        }
+  background-image:
+    radial-gradient(circle, var(--wp--preset--color--gray-light) 0.8px, transparent 0.8px);
+  background-size: 24px 24px;
+  background-position: 0 0;
+}
 
 .hero-diagonal {
   position: fixed;
@@ -899,12 +897,10 @@ radial-gradient(ellipse 60% 50% at 20% 30%, rgba(0,0,0,0.008) 0%, transparent 50
 .about-section {
   background-color: var(--wp--preset--color--white);
   position: relative;
-background-image:
-radial-gradient(ellipse 50% 50% at 75% 25%, rgba(0,0,0,0.008) 0%, transparent 50%),
-                    radial-gradient(ellipse 45% 45% at 25% 70%, rgba(0,0,0,0.006) 0%, transparent 45%),
-                radial-gradient(circle, rgba(255,255,255,0.18) 0.3px, transparent 0.3px);
-              background-size: 100% 100%, 100% 100%, 40px 40px;
-        }
+  background-image:
+    radial-gradient(circle, var(--wp--preset--color--gray-light) 0.8px, transparent 0.8px);
+  background-size: 24px 24px;
+}
 
 .about-layout {
   display: grid;
@@ -2298,7 +2294,7 @@ textarea:focus-visible {
 }
 
 /* WordPress Admin Bar Offset */
-.admin-bar .nav,
+/* .admin-bar .nav,
 .admin-bar [class*="nav"][style*="position: fixed"],
 .admin-bar [class*="header"][style*="position: fixed"] {
   top: 32px;
@@ -2310,7 +2306,7 @@ textarea:focus-visible {
   .admin-bar [class*="header"][style*="position: fixed"] {
     top: 46px;
   }
-}
+} */
 
 /* Reset paragraph wrapper styles for inline content converted to wp:paragraph */
 :where(.wp-block-paragraph) {
@@ -2524,7 +2520,7 @@ header:has(.wp-block-navigation .is-menu-open) {
 
 
 /* WordPress Admin Bar Offset (auto-generated for fixed/sticky elements) */
-.admin-bar .hero-diagonal,
+/* .admin-bar .hero-diagonal,
 .admin-bar .hero-header {
   top: 32px !important;
 }
@@ -2534,7 +2530,7 @@ header:has(.wp-block-navigation .is-menu-open) {
 .admin-bar .hero-header {
     top: 46px !important;
   }
-}
+} */
 
 /* ===========================================
    RESPONSIVE UTILITY CLASSES (Miles Utilities)
@@ -2569,9 +2565,9 @@ header:has(.wp-block-navigation .is-menu-open) {
   z-index: 100;
 }
 
-.admin-bar .miles-sticky-top {
+/* .admin-bar .miles-sticky-top {
   top: 32px;
-}
+} */
 
 @media screen and (max-width: 782px) {
   .admin-bar .miles-sticky-top {
