@@ -189,7 +189,8 @@ linear-gradient(
 .hero-content {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: var(--wp--preset--spacing--50);
+  /* gap: var(--wp--preset--spacing--50); */
+  gap: 0;
   align-items: center;
   padding: 0 var(--wp--preset--spacing--50);
   z-index: 5;
