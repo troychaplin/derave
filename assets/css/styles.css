@@ -68,13 +68,14 @@ a {
 
 /* :::SECTION:Hero::: */
 .hero {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  background-color: var(--wp--preset--color--white);
-  color: var(--wp--preset--color--black);
-  font-family: var(--font-body);
-  overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+      background-color: var(--wp--preset--color--white);
+      color: var(--wp--preset--color--black);
+      font-family: var(--font-body);
+      overflow: hidden;
+      position: relative;
   background-image:
     radial-gradient(circle, var(--wp--preset--color--gray-light) 0.8px, transparent 0.8px);
   background-size: 24px 24px;
@@ -82,25 +83,47 @@ a {
 }
 
 .hero-diagonal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    linear-gradient(
-      -55deg,
-      transparent 0%,
-      transparent 38%,
-      var(--wp--preset--color--pink) 38%,
-      var(--wp--preset--color--pink) 39.5%,
-      transparent 39.5%,
-      transparent 100%
-    );
-  opacity: 0.12;
-}
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      background:
+        linear-gradient(
+          -55deg,
+          transparent 0%,
+          transparent 38%,
+          var(--wp--preset--color--pink) 38%,
+          var(--wp--preset--color--pink) 39.5%,
+          transparent 39.5%,
+          transparent 100%
+        );
+      opacity: 0.12;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 115%;
+      height: 125%;
+      pointer-events: none;
+      z-index: 0;
+      background:
+        linear-gradient(
+          -55deg,
+          transparent 0%,
+          transparent 43%,
+          var(--wp--preset--color--pink) 43%,
+          var(--wp--preset--color--pink) 49%,
+          transparent 49%,
+          transparent 100%
+        );
+      opacity: 0.16;
+    }
 
 .hero-header {
   display: flex;
@@ -504,8 +527,8 @@ a {
     flex-wrap: wrap;
   }
   .hero-diagonal {
-    opacity: 0.06;
-  }
+        opacity: 0.06;
+      }
 }
 
 @media (max-width: 480px) {
