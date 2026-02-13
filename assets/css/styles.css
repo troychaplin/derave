@@ -91,15 +91,15 @@ a {
       pointer-events: none;
       z-index: 0;
       background:
-        linear-gradient(
-          -55deg,
-          transparent 0%,
-          transparent 38%,
-          var(--wp--preset--color--pink) 38%,
-          var(--wp--preset--color--pink) 39.5%,
-          transparent 39.5%,
-          transparent 100%
-        );
+linear-gradient(
+                  -23deg,
+                  transparent 0%,
+                  transparent 38%,
+              var(--wp--preset--color--pink) 38%,
+              var(--wp--preset--color--pink) 38.75%,
+              transparent 38.75%,
+              transparent 100%
+            );
       opacity: 0.12;
     }
     
@@ -113,15 +113,15 @@ a {
       pointer-events: none;
       z-index: 0;
       background:
-        linear-gradient(
-          -55deg,
-          transparent 0%,
-          transparent 43%,
-          var(--wp--preset--color--pink) 43%,
-          var(--wp--preset--color--pink) 49%,
-          transparent 49%,
-          transparent 100%
-        );
+linear-gradient(
+                  -23deg,
+                  transparent 0%,
+                  transparent 43%,
+              var(--wp--preset--color--pink) 43%,
+              var(--wp--preset--color--pink) 46%,
+              transparent 46%,
+              transparent 100%
+            );
       opacity: 0.16;
     }
 
